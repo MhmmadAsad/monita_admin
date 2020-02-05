@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Data | Monitoring System</title>
+	<title> Home | Monitoring System</title>
 </head>
 
 	<!-- Css -->
@@ -76,12 +76,6 @@
 			margin-left:10px;
 			font-family:century gothic;
 		}
-		.sidebar h4 {
-			color:white;
-			font-weight:normal;
-			text-align:center;
-			font-family:century gothic;
-		}
 		.sidebar input{
 			margin-left:10px;
 			padding:10px 10px;
@@ -132,67 +126,43 @@
 
 		/*Content*/
 
-		.content iframe{
-			border:none;
-			width:1365px;
-			height:575px;
-			margin-bottom:50.5px;
+		.loader {
+			border: 16px solid #f3f3f3;
+			border-radius: 50%;
+			border-top: 16px solid #209ff1;
+			border-bottom: 16px solid #209ff1;
+			width: 120px;
+			height: 120px;
+			-webkit-animation: spin 2s linear infinite;
+			animation: spin 2s linear infinite;
 		}
-		/*Footer*/
-		.footer {
-			width:1105px;
-			text-align:center;
-			height:25px;
-			box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px 1px;
-			float:right;
-			font-family:century gothic;
-			padding:20px;
-			background-color:#f8f9fa;
-			
+
+		@-webkit-keyframes spin {
+			0% { -webkit-transform: rotate(0deg); }
+			100% { -webkit-transform: rotate(360deg); }
 		}
-	
 
-
-
+		@keyframes spin {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		}
 	</style>
 
 <!-- HTML -->
 <body>
 	<div class="container">
-		<div class="sidebar">
-			<center>	
-			<h3>Daun Biru Engineering</h3>
-			</center>
-
-			<h4>IP Addres : 192.168.0.10</h4>
-			<h4 style="margin-bottom:15px;">IP Server : 192.168.1.250</h4>
-			<span >Getting Started</span>
-			<ul>
-				<li><a class="active" href="index.html">Data</a></li>
-				<li class="dropdown">	
-					<a href="#">Settings</a>
-					  <div class="dropdown-content">
-					    <a href="ukur.html">Titik Ukur</a>
-					    <a href="modul.html">Modul</a>
-					    <a href="sumber.html">Sumber</a>
-					  </div>
-				</li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="reboot.html">Reboot</a></li>
-			</ul>
+		<div class="nav">
+			<h3 style="float:left;border-right:2px solid black;padding:0px 13px; "><b>System Reboot</b></h3>
+			<h3>Monita Online Mentoring System</h3>
 		</div>
 
 		<div class="content">
-			<iframe src="data1.html" >
-			
-			</iframe>
+			<center>	
+			<div class="loader">
+			</div>
+			<h4>Please Wait..</h4>
+			</center>
 		</div>
-
-		<div class="footer">
-			<p>&copy; 2020 Daun Biru Engineering</p>
-		</div>
-
-
 
 	</div>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Home | Monitoring System</title>
+	<title> Modul | Monitoring System</title>
 </head>
 
 	<!-- Css -->
@@ -76,6 +76,12 @@
 			margin-left:10px;
 			font-family:century gothic;
 		}
+		.sidebar h4 {
+			color:white;
+			font-weight:normal;
+			text-align:center;
+			font-family:century gothic;
+		}
 		.sidebar input{
 			margin-left:10px;
 			padding:10px 10px;
@@ -125,8 +131,11 @@
 		.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 		/*Content*/
-		.content {
-			margin-left:250px;
+
+		.content iframe{
+			border:none;
+			width:1365px;
+			height:690px;
 		}
 
 
@@ -135,23 +144,21 @@
 <!-- HTML -->
 <body>
 	<div class="container">
-		<div class="nav">
-			<h3>Monita Online Mentoring System</h3>
-		</div>
 		<div class="sidebar">
 			<center>	
 			<h3>Daun Biru Engineering</h3>
 			</center>
 
-			<input type="text" name="" placeholder="Search..">
-			<span>Getting Started</span>
+			<h4>IP Addres : 192.168.0.10</h4>
+			<h4 style="margin-bottom:15px;">IP Server : 192.168.1.250</h4>
+
+			<span >Getting Started</span>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="data.html">Data</a></li>
-				<li class="dropdown">
+				<li><a href="index.html">Data</a></li>
+				<li class="dropdown">	
 					<a href="#">Settings</a>
 					  <div class="dropdown-content">
-					    <a href="ukur.html">Titik Ukur</a>
+					    <a href="Ukur.html">Titik Ukur</a>
 					    <a href="modul.html">Modul</a>
 					    <a href="sumber.html">Sumber</a>
 					  </div>
@@ -162,8 +169,12 @@
 		</div>
 
 		<div class="content">
-			<h1>Reboot</h1>
+			<iframe src="t_reboot.html" >
+			
+			</iframe>
 		</div>
+
+
 
 	</div>
 
