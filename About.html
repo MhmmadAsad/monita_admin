@@ -7,12 +7,16 @@
 	<!-- Css -->
 	<style type="text/css">
 		*{
+			overflow:hidden;
 			padding:0px;
 			margin:0px;
 		}
 
 
 		.container{
+			width:fixed;
+			overflow-y: hidden;
+  			overflow-x: hidden;
 			font-family:calibri;
 		}
 
@@ -36,8 +40,8 @@
 
 		/*Sidebar*/
 		.container .sidebar{
-			width:220px;
-			height:695px;
+			width:17%;
+			height:100%;
 			position:absolute;
 			box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 1px;
 			background-color:#209ff1;
@@ -78,9 +82,10 @@
 		}
 		.sidebar h4 {
 			color:white;
+			font-size:14px;
 			font-weight:normal;
 			text-align:center;
-			font-family:century gothic;
+			font-family:consolas;
 		}
 		.sidebar input{
 			margin-left:10px;
@@ -102,6 +107,7 @@
 				/*Dropdown*/
 
 		.dropdown {
+		  overflow:all;	
 		  position: relative;
 		  display: inline-block;
 		}
@@ -131,25 +137,26 @@
 		.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 		/*Content*/
-
 		.content iframe{
 			border:none;
-			width:1365px;
+			width:100%;
 			height:575px;
-			margin-bottom:50.5px;
 		}
 		/*Footer*/
 		.footer {
-			width:1105px;
+			position:fixed;
+			width:80%;
+			bottom:0;
+			right:0;
 			text-align:center;
 			height:25px;
 			box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px 1px;
-			float:right;
 			font-family:century gothic;
 			padding:20px;
 			background-color:#f8f9fa;
 			
 		}
+	
 
 
 	</style>
@@ -159,23 +166,21 @@
 	<div class="container">
 		<div class="sidebar">
 			<center>	
-			<h3>Daun Biru Engineering</h3>
+			<h3>Daun Biru <br>Engineering</h3>
 			</center>
+
 			<h4>IP Addres : 192.168.0.10</h4>
 			<h4 style="margin-bottom:15px;">IP Server : 192.168.1.250</h4>
-			<span >Getting Started</span>
+
 			<ul>
+			<span>Getting Started</span>
 				<li><a href="index.html">Data</a></li>
-				<li class="dropdown">	
-					<a href="#">Settings</a>
-					  <div class="dropdown-content">
-					    <a href="Ukur.html">Titik Ukur</a>
-					    <a href="modul.html">Modul</a>
-					    <a href="sumber.html">Sumber</a>
-					  </div>
-				</li>
 				<li><a class="active"  href="about.html">About</a></li>
-				<li><a href="reboot.html">Reboot</a></li>
+				<li style="margin-bottom:10px;"><a href="reboot.html">Reboot</a></li>
+			<span>Settings</span>
+			    <li><a href="Ukur.html">Titik Ukur</a></li>
+			    <li><a href="modul.html">Modul</a></li>
+			    <li><a href="sumber.html">Sumber</a></li>				
 			</ul>
 		</div>
 
@@ -184,10 +189,9 @@
 			
 			</iframe>
 		</div>
-			<div class="footer">
+		<div class="footer">
 			<p>&copy; 2020 Daun Biru Engineering</p>
 		</div>
-
 
 
 	</div>
